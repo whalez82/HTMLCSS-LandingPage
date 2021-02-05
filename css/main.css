@@ -252,11 +252,14 @@ section {
   position: relative;
 }
 
-.full-banner::before {
+.full-banner:before {
   content: "";
   position: absolute;
   border: 1px solid #ffffff;
-  border-width: 30px 30px 50px 50px;
+  top: 30px;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
   z-index: 1;
 }
 
@@ -277,11 +280,14 @@ section {
 }
 
 .full-banner-sidebar h4 {
-  font: italic 700 40px #637f94;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  color: #637f94;
   line-height: 1;
 }
 
-.full-banner-sidebar h4::after {
+.full-banner-sidebar h4:after {
   content: "";
   width: 100px;
   height: 1px;
